@@ -1,0 +1,49 @@
+html, body, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#mouseLoc {
+    bottom: 95px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Fajilla One", sans-serif;
+    padding: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    background-color: #eeeee9;
+    border-radius: 1px;
+}
+.floater {
+    position: absolute;
+    z-index: 999;
+}
+.tooltip {
+  position: absolute;    
+  pointer-events: none;
+  transition: opacity 100ms;
+}
+.tooltip>div {
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  transform: translate3d(-50%, -125%, 0);
+}
+.esri-widget {
+    font-family: "Fajilla One", sans-serif;
+    background-color: #eeeee9;
+}
+.esri-widget-button {
+    background-color: #711100;
+    color: #ffffff;
+}
+.esri-widget-button:hover {
+    background-color: #ffffff;
+    color: #711100;
+}
+.esri-widget-button:active {
+    background-color: #ffffff;
+    color: #711100;
+}
