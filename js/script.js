@@ -21,7 +21,7 @@ require([
     webMercatorUtils
 ) {
     var map = new Map({
-        basemap: "topo"
+        basemap: "topo-vector"
     });
 
     var view = new MapView({
@@ -52,9 +52,7 @@ require([
         unit: "dual"
     });
 
-    view.ui.add(scaleBar, {
-        position: "bottom-left"
-    });
+    view.ui.add(scaleBar, "bottom-left");
 
     //Add home button to reset view to original extent after the map has been panned or zoomed
     var homeButton = new Home({
